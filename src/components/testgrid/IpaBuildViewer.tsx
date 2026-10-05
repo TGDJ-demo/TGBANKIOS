@@ -14,6 +14,7 @@ import {
   ExternalLink,
   Info,
   CheckCircle2,
+  Code2,
 } from 'lucide-react';
 
 interface FilePreview {
@@ -310,6 +311,79 @@ Load Commands:
 
       {/* Main Body */}
       <div className="flex-1 p-5 space-y-6">
+        {/* Native Xcode Project Card */}
+        <div className="bg-slate-950/80 rounded-2xl border border-indigo-900/50 p-4 shadow-xl">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <Code2 className="w-4 h-4 text-indigo-400" />
+              <h3 className="text-xs font-bold uppercase tracking-wider text-white">
+                Native Xcode Project: TGBank.xcodeproj
+              </h3>
+            </div>
+            <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-950 text-indigo-300 border border-indigo-800">
+              Xcode 14 / 15 / 16 Ready
+            </span>
+          </div>
+
+          <p className="text-xs text-slate-300 mb-3">
+            This is a pure native SwiftUI project. You can open <code className="text-indigo-300 font-mono">ios/TGBank.xcodeproj</code> (or <code className="text-indigo-300 font-mono">ios/tgbank.xcodeproj</code>) directly in Apple Xcode on macOS, or build directly with <code className="text-indigo-300 font-mono">xcodebuild</code>:
+          </p>
+
+          <div className="space-y-2.5 font-mono text-xs">
+            <div className="bg-slate-900 p-3 rounded-xl border border-slate-800 flex flex-col gap-1.5">
+              <div className="flex items-center justify-between text-slate-400 text-[11px]">
+                <span className="font-semibold text-slate-300">1. Open in Xcode (macOS GUI):</span>
+                <button
+                  type="button"
+                  onClick={() => copyToClipboard('open ios/TGBank.xcodeproj', 'cmd_open')}
+                  className="text-slate-400 hover:text-white flex items-center gap-1 transition"
+                >
+                  {copiedSnippet === 'cmd_open' ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                  <span>{copiedSnippet === 'cmd_open' ? 'Copied' : 'Copy'}</span>
+                </button>
+              </div>
+              <code className="text-emerald-400 select-all">open ios/TGBank.xcodeproj</code>
+            </div>
+
+            <div className="bg-slate-900 p-3 rounded-xl border border-slate-800 flex flex-col gap-1.5">
+              <div className="flex items-center justify-between text-slate-400 text-[11px]">
+                <span className="font-semibold text-slate-300">2. One-line terminal build (Archive & Export IPA):</span>
+                <button
+                  type="button"
+                  onClick={() => copyToClipboard('cd ios && ./build_ipa.sh', 'cmd_script')}
+                  className="text-slate-400 hover:text-white flex items-center gap-1 transition"
+                >
+                  {copiedSnippet === 'cmd_script' ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                  <span>{copiedSnippet === 'cmd_script' ? 'Copied' : 'Copy'}</span>
+                </button>
+              </div>
+              <code className="text-blue-300 select-all">cd ios && ./build_ipa.sh</code>
+            </div>
+
+            <div className="bg-slate-900 p-3 rounded-xl border border-slate-800 flex flex-col gap-1.5">
+              <div className="flex items-center justify-between text-slate-400 text-[11px]">
+                <span className="font-semibold text-slate-300">3. Direct xcodebuild CLI command:</span>
+                <button
+                  type="button"
+                  onClick={() =>
+                    copyToClipboard(
+                      "xcodebuild clean archive -project ios/TGBank.xcodeproj -scheme TGBank -configuration Debug -destination 'generic/platform=iOS' -archivePath ios/build/TGBank.xcarchive CODE_SIGNING_ALLOWED=NO",
+                      'cmd_xcodebuild'
+                    )
+                  }
+                  className="text-slate-400 hover:text-white flex items-center gap-1 transition"
+                >
+                  {copiedSnippet === 'cmd_xcodebuild' ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                  <span>{copiedSnippet === 'cmd_xcodebuild' ? 'Copied' : 'Copy'}</span>
+                </button>
+              </div>
+              <code className="text-purple-300 text-[11px] break-all select-all">
+                xcodebuild clean archive -project ios/TGBank.xcodeproj -scheme TGBank -configuration Debug -destination 'generic/platform=iOS' -archivePath ios/build/TGBank.xcarchive CODE_SIGNING_ALLOWED=NO
+              </code>
+            </div>
+          </div>
+        </div>
+
         {/* Export Locations in Folder Directory */}
         <div className="bg-slate-950/80 rounded-2xl border border-slate-800 p-4">
           <div className="flex items-center justify-between mb-3">

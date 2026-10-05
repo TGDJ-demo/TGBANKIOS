@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7DE02F9902671898E3F6B49 /* TGBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B008C0066987E375C1B49DD5 /* TGBankApp.swift */; };
+		6C04C3CD92552130D0FEE034 /* Beneficiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B75376868036409D43779B /* Beneficiary.swift */; };
+		6960B787389A80C4ECB6A933 /* EliteCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */; };
+		8255C9F63412D734FEBB0127 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */; };
+		5370DDC9C7B9656D464A1ADB /* TestControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7396039F673BC1D1FF0112D /* TestControlState.swift */; };
+		FC12EBE72302C28E801F3F53 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */; };
+		3E59669886D94E7C8D6A5A0E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AE01F05BF9C8631610022 /* UserProfile.swift */; };
+		137B40BA39F44E214235C286 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7995F6955870973906D92723 /* NavigationCoordinator.swift */; };
+		FAA862683B4284808EA995D8 /* BankRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFF12784CA54EC58ED9D7 /* BankRepository.swift */; };
+		F99EFC15759FA31122A91BB6 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */; };
+		4EAB0321F3772194C4ECBA52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */; };
+		2B35EB12836E799426F850D7 /* CreditDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */; };
+		261C41D7C4E1D3D60CD77F61 /* LoanApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */; };
+		53B9916D1954D512EA4D8F59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07302C04FBE0863AA127B /* HomeView.swift */; };
+		643E3CCC18E32E391A2EED5B /* KYCWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31358722B88896CC250CD2E /* KYCWizardView.swift */; };
+		C4F08B31788693E01F3D1161 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */; };
+		50C1BBFB6E33CB16505DF571 /* AddMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */; };
+		929FF0399EC4219E03866AB9 /* PayBillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97DC712FF6BE637B58804D /* PayBillsView.swift */; };
+		8B399F0C17A5D5F5CB597FF1 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A31598BC9AA49471403EE /* QRScannerView.swift */; };
+		963744471D914944A1C55B76 /* ReceiveMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */; };
+		F54F5C50D5F651280C1D9E9E /* SendMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */; };
+		D766223D10B50BFB70820E07 /* UPIPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */; };
+		67285B62D16C36654120F682 /* WithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494767BE438C19D9210F6E03 /* WithdrawView.swift */; };
+		C56B77B2774918C9C2A472B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27562D0E1948AAB51B969F40 /* ProfileView.swift */; };
+		28256F87EBBD8E6CDC7E9FD3 /* TestControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */; };
+		C5E1C5C30462F60B5EF1FCBA /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */; };
+		B7223AEF895F0ED7A69AF74E /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */; };
+		2BCA330C5D65CED30DD75E65 /* TGBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */; };
+		3A3BD8160C49D17D9C36657D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58660C7C3945120B125DFF0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5979EC4BF31760CF50FB5F49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A461ECD4122F7603E004E3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456BB2D4EC37EFAFB366D863;
+			remoteInfo = TGBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B008C0066987E375C1B49DD5 /* TGBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/App/TGBankApp.swift"; sourceTree = "<group>"; };
+		29B75376868036409D43779B /* Beneficiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/Beneficiary.swift"; sourceTree = "<group>"; };
+		97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/EliteCreditCard.swift"; sourceTree = "<group>"; };
+		3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/NotificationItem.swift"; sourceTree = "<group>"; };
+		A7396039F673BC1D1FF0112D /* TestControlState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/TestControlState.swift"; sourceTree = "<group>"; };
+		88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/Transaction.swift"; sourceTree = "<group>"; };
+		096AE01F05BF9C8631610022 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/UserProfile.swift"; sourceTree = "<group>"; };
+		7995F6955870973906D92723 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Navigation/NavigationCoordinator.swift"; sourceTree = "<group>"; };
+		993EFF12784CA54EC58ED9D7 /* BankRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Repository/BankRepository.swift"; sourceTree = "<group>"; };
+		9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Theme/Color+Theme.swift"; sourceTree = "<group>"; };
+		A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Authentication/LoginView.swift"; sourceTree = "<group>"; };
+		2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Credit/CreditDashboardView.swift"; sourceTree = "<group>"; };
+		B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Credit/LoanApplicationView.swift"; sourceTree = "<group>"; };
+		4ED07302C04FBE0863AA127B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Home/HomeView.swift"; sourceTree = "<group>"; };
+		C31358722B88896CC250CD2E /* KYCWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/KYC/KYCWizardView.swift"; sourceTree = "<group>"; };
+		5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Notifications/NotificationsView.swift"; sourceTree = "<group>"; };
+		A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/AddMoneyView.swift"; sourceTree = "<group>"; };
+		3C97DC712FF6BE637B58804D /* PayBillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/PayBillsView.swift"; sourceTree = "<group>"; };
+		9D0A31598BC9AA49471403EE /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/QRScannerView.swift"; sourceTree = "<group>"; };
+		4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/ReceiveMoneyView.swift"; sourceTree = "<group>"; };
+		86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/SendMoneyView.swift"; sourceTree = "<group>"; };
+		2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/UPIPayView.swift"; sourceTree = "<group>"; };
+		494767BE438C19D9210F6E03 /* WithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/WithdrawView.swift"; sourceTree = "<group>"; };
+		27562D0E1948AAB51B969F40 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Profile/ProfileView.swift"; sourceTree = "<group>"; };
+		7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/TestControls/TestControlsView.swift"; sourceTree = "<group>"; };
+		F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Transactions/TransactionDetailView.swift"; sourceTree = "<group>"; };
+		DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Transactions/TransactionsListView.swift"; sourceTree = "<group>"; };
+		9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBankUITests/TGBankUITests.swift"; sourceTree = "<group>"; };
+		B58660C7C3945120B125DFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TGBank/Assets.xcassets"; sourceTree = "<group>"; };
+		00B6E0AEFC136165F82A38E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGBank/Info.plist"; sourceTree = "<group>"; };
+		D4031DA3531D5CEEF2DDA641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGBankUITests/Info.plist"; sourceTree = "<group>"; };
+		7E543B1122DB7E8F52AADDA2 /* TGBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		137A9756356DDD458E39FC2E /* TGBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TGBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		174C82A35F8ECB7C3A05917B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBDEF49C9F32C62593C2D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68032A9EA3DCFBB5F622253A = {
+			isa = PBXGroup;
+			children = (
+				68561F46E2FC3A1CCD7D94A4 /* TGBank */,
+				9E52A7DF9C1C5B39215CEEA0 /* TGBankUITests */,
+				192043EC6F0337C818215876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68561F46E2FC3A1CCD7D94A4 /* TGBank */ = {
+			isa = PBXGroup;
+			children = (
+				B58660C7C3945120B125DFF0 /* Assets.xcassets */,
+				00B6E0AEFC136165F82A38E4 /* Info.plist */,
+				B008C0066987E375C1B49DD5 /* TGBankApp.swift */,
+				29B75376868036409D43779B /* Beneficiary.swift */,
+				97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */,
+				3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */,
+				A7396039F673BC1D1FF0112D /* TestControlState.swift */,
+				88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */,
+				096AE01F05BF9C8631610022 /* UserProfile.swift */,
+				7995F6955870973906D92723 /* NavigationCoordinator.swift */,
+				993EFF12784CA54EC58ED9D7 /* BankRepository.swift */,
+				9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */,
+				A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */,
+				2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */,
+				B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */,
+				4ED07302C04FBE0863AA127B /* HomeView.swift */,
+				C31358722B88896CC250CD2E /* KYCWizardView.swift */,
+				5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */,
+				A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */,
+				3C97DC712FF6BE637B58804D /* PayBillsView.swift */,
+				9D0A31598BC9AA49471403EE /* QRScannerView.swift */,
+				4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */,
+				86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */,
+				2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */,
+				494767BE438C19D9210F6E03 /* WithdrawView.swift */,
+				27562D0E1948AAB51B969F40 /* ProfileView.swift */,
+				7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */,
+				F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */,
+				DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */,
+			);
+			path = TGBank;
+			sourceTree = "<group>";
+		};
+		9E52A7DF9C1C5B39215CEEA0 /* TGBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */,
+				D4031DA3531D5CEEF2DDA641 /* Info.plist */,
+			);
+			path = TGBankUITests;
+			sourceTree = "<group>";
+		};
+		192043EC6F0337C818215876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E543B1122DB7E8F52AADDA2 /* TGBank.app */,
+				137A9756356DDD458E39FC2E /* TGBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456BB2D4EC37EFAFB366D863 /* TGBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE2731BD57B18A61710FADA /* Build configuration list for PBXNativeTarget "TGBank" */;
+			buildPhases = (
+				F294599FC5C1135C293C29A6 /* Sources */,
+				174C82A35F8ECB7C3A05917B /* Frameworks */,
+				D683134E30F8345ABF3F4263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TGBank;
+			productName = TGBank;
+			productReference = 7E543B1122DB7E8F52AADDA2 /* TGBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E755AFCAE6E1EB29154F5B5C /* TGBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19C1F21EBE5AD46B74E40E3 /* Build configuration list for PBXNativeTarget "TGBankUITests" */;
+			buildPhases = (
+				D3AED1C1388C229C5EF54139 /* Sources */,
+				CDBDEF49C9F32C62593C2D3D /* Frameworks */,
+				ADC040EE40DD42F1117F17F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F293293CD6EB49BEAEBDF730 /* PBXTargetDependency */,
+			);
+			name = TGBankUITests;
+			productName = TGBankUITests;
+			productReference = 137A9756356DDD458E39FC2E /* TGBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A461ECD4122F7603E004E3BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					456BB2D4EC37EFAFB366D863 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E755AFCAE6E1EB29154F5B5C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 456BB2D4EC37EFAFB366D863;
+					};
+				};
+			};
+			buildConfigurationList = D93B74D091CA7426B0D60A81 /* Build configuration list for PBXProject "TGBank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68032A9EA3DCFBB5F622253A;
+			productRefGroup = 192043EC6F0337C818215876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456BB2D4EC37EFAFB366D863 /* TGBank */,
+				E755AFCAE6E1EB29154F5B5C /* TGBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D683134E30F8345ABF3F4263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3BD8160C49D17D9C36657D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC040EE40DD42F1117F17F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F294599FC5C1135C293C29A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DE02F9902671898E3F6B49 /* TGBankApp.swift in Sources */,
+				6C04C3CD92552130D0FEE034 /* Beneficiary.swift in Sources */,
+				6960B787389A80C4ECB6A933 /* EliteCreditCard.swift in Sources */,
+				8255C9F63412D734FEBB0127 /* NotificationItem.swift in Sources */,
+				5370DDC9C7B9656D464A1ADB /* TestControlState.swift in Sources */,
+				FC12EBE72302C28E801F3F53 /* Transaction.swift in Sources */,
+				3E59669886D94E7C8D6A5A0E /* UserProfile.swift in Sources */,
+				137B40BA39F44E214235C286 /* NavigationCoordinator.swift in Sources */,
+				FAA862683B4284808EA995D8 /* BankRepository.swift in Sources */,
+				F99EFC15759FA31122A91BB6 /* Color+Theme.swift in Sources */,
+				4EAB0321F3772194C4ECBA52 /* LoginView.swift in Sources */,
+				2B35EB12836E799426F850D7 /* CreditDashboardView.swift in Sources */,
+				261C41D7C4E1D3D60CD77F61 /* LoanApplicationView.swift in Sources */,
+				53B9916D1954D512EA4D8F59 /* HomeView.swift in Sources */,
+				643E3CCC18E32E391A2EED5B /* KYCWizardView.swift in Sources */,
+				C4F08B31788693E01F3D1161 /* NotificationsView.swift in Sources */,
+				50C1BBFB6E33CB16505DF571 /* AddMoneyView.swift in Sources */,
+				929FF0399EC4219E03866AB9 /* PayBillsView.swift in Sources */,
+				8B399F0C17A5D5F5CB597FF1 /* QRScannerView.swift in Sources */,
+				963744471D914944A1C55B76 /* ReceiveMoneyView.swift in Sources */,
+				F54F5C50D5F651280C1D9E9E /* SendMoneyView.swift in Sources */,
+				D766223D10B50BFB70820E07 /* UPIPayView.swift in Sources */,
+				67285B62D16C36654120F682 /* WithdrawView.swift in Sources */,
+				C56B77B2774918C9C2A472B8 /* ProfileView.swift in Sources */,
+				28256F87EBBD8E6CDC7E9FD3 /* TestControlsView.swift in Sources */,
+				C5E1C5C30462F60B5EF1FCBA /* TransactionDetailView.swift in Sources */,
+				B7223AEF895F0ED7A69AF74E /* TransactionsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AED1C1388C229C5EF54139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCA330C5D65CED30DD75E65 /* TGBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F293293CD6EB49BEAEBDF730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456BB2D4EC37EFAFB366D863 /* TGBank */;
+			targetProxy = 5979EC4BF31760CF50FB5F49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2EA9FBC0D64BA2DCD189CEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F985724EC27E346C6F43760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A2DBA72AC0E16846326CF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TGBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF2C3D79E5FE69317EDAE55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TGBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32B0AEC9F25CDC53790926D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TGBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TGBank;
+			};
+			name = Debug;
+		};
+		62B72AACAA0D415137FA878D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TGBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TGBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93B74D091CA7426B0D60A81 /* Build configuration list for PBXProject "TGBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA9FBC0D64BA2DCD189CEFC /* Debug */,
+				6F985724EC27E346C6F43760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE2731BD57B18A61710FADA /* Build configuration list for PBXNativeTarget "TGBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2DBA72AC0E16846326CF8F /* Debug */,
+				DDF2C3D79E5FE69317EDAE55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19C1F21EBE5AD46B74E40E3 /* Build configuration list for PBXNativeTarget "TGBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B0AEC9F25CDC53790926D6 /* Debug */,
+				62B72AACAA0D415137FA878D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A461ECD4122F7603E004E3BE /* Project object */;
+}

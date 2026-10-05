@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "python3 scripts/export_debug_ipa.py && vite build",
+    "build": "python3 scripts/generate_xcodeproj.py && python3 scripts/sync_swift_files_ts.py && python3 scripts/export_debug_ipa.py && vite build",
     "preview": "vite preview",
+    "generate:xcodeproj": "python3 scripts/generate_xcodeproj.py",
     "export:ipa": "python3 scripts/export_debug_ipa.py",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"

@@ -553,6 +553,25 @@ def generate_itunes_metadata(output_path):
 def build_debug_ipa():
     print(f"[*] Building TG Bank Fully-Provisioned Debug IPA package...")
 
+    # Ensure /ios system-level symlink points to ios directory for tools expecting /ios/...
+    if not os.path.exists("/ios"):
+        try:
+            os.symlink(IOS_DIR, "/ios")
+            print("  [+] Created system symlink /ios -> " + IOS_DIR)
+        except Exception:
+            pass
+
+    # Ensure native Xcode project (TGBank.xcodeproj / tgbank.xcodeproj) is present
+    if not os.path.exists(os.path.join(IOS_DIR, "TGBank.xcodeproj", "project.pbxproj")):
+        print("  [*] Generating TGBank.xcodeproj...")
+        try:
+            import generate_xcodeproj
+            generate_xcodeproj.setup_assets_xcassets()
+            generate_xcodeproj.setup_info_plist()
+            generate_xcodeproj.generate_pbxproj()
+        except Exception as e:
+            print(f"  [!] Note on xcodeproj: {e}")
+
     # Ensure directories
     os.makedirs(APP_DIR, exist_ok=True)
     os.makedirs(CERTS_DIR, exist_ok=True)

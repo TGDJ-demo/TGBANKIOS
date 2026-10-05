@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+Syncs Swift codebase, Xcode project files, and assets into src/swift_codebase/swiftFiles.ts
+so the web browser, code inspector, and 1-click Download Xcode (.zip) contain the complete
+TGBank.xcodeproj and native sources.
+"""
+
 import os
 import json
 
@@ -14,22 +20,36 @@ category_mapping = {
     "Repository": "Repository",
     "Views": "Views",
     "TGBankUITests": "Tests",
+    "TGBank.xcodeproj": "App",
 }
 
 collected_files = []
 
+# List of file extensions to include in the project bundle
+VALID_EXTENSIONS = (".swift", ".pbxproj", ".xcscheme", ".xcworkspacedata", ".plist", ".json", ".sh")
+
 for root, dirs, files in os.walk(IOS_DIR):
-    if "build" in root or ".build" in root:
+    if "build" in root or ".build" in root or "certs" in root:
         continue
     for file in sorted(files):
-        if file.endswith(".swift"):
+        if any(file.endswith(ext) for ext in VALID_EXTENSIONS):
             abs_path = os.path.join(root, file)
             rel_path = os.path.relpath(abs_path, IOS_DIR)
-            with open(abs_path, "r", encoding="utf-8") as f:
-                content = f.read()
+
+            # Skip symlink targets like tgbank.xcodeproj if already covering TGBank.xcodeproj
+            if rel_path.startswith("tgbank.xcodeproj"):
+                continue
+
+            try:
+                with open(abs_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+            except UnicodeDecodeError:
+                continue
 
             parts = rel_path.split(os.sep)
-            if rel_path == "Package.swift":
+            if "xcodeproj" in parts[0]:
+                cat = "App"
+            elif rel_path in ("Package.swift", "build_ipa.sh"):
                 cat = "App"
             elif len(parts) > 1 and parts[1] in category_mapping:
                 cat = category_mapping[parts[1]]
@@ -66,4 +86,4 @@ ts_content += """export const SWIFT_FILES: Record<string, string> = SWIFT_PROJEC
 with open(SWIFT_FILES_TS, "w", encoding="utf-8") as f:
     f.write(ts_content)
 
-print(f"[*] Synchronized {len(collected_files)} Swift files into {SWIFT_FILES_TS}")
+print(f"[*] Synchronized {len(collected_files)} files into {SWIFT_FILES_TS}")
