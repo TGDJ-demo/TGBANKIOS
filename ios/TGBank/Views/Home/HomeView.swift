@@ -24,18 +24,17 @@ public struct HomeView: View {
                             
                             HStack(spacing: 4) {
                                 Circle()
-                                    .fill(Color.green)
+                                    .fill(Color.tgTeal)
                                     .frame(width: 8, height: 8)
                                 Text("Online")
                                     .font(.caption2)
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.tgTeal)
                             }
                             .accessibilityIdentifier("tgBank.home.onlineStatus")
                         }
 
                         Text(repository.user.name)
-                            .font(.title2)
-                            .bold()
+                            .font(.system(size: 24, weight: .semibold, design: .serif))
                             .accessibilityIdentifier("tgBank.home.userName")
                     }
 
@@ -48,8 +47,8 @@ public struct HomeView: View {
                             .bold()
                             .padding(.horizontal, 8)
                             .padding(.vertical, 3)
-                            .background(Color.blue.opacity(0.15))
-                            .foregroundColor(.blue)
+                            .background(Color.tgSapphire.opacity(0.15))
+                            .foregroundColor(.tgSapphire)
                             .cornerRadius(6)
 
                         Text("Checking Account • 4588")
@@ -64,7 +63,7 @@ public struct HomeView: View {
                     HStack {
                         Text("Total Available Balance")
                             .font(.caption)
-                            .foregroundColor(.secondary)
+                            .foregroundColor(.white.opacity(0.76))
 
                         Spacer()
 
@@ -72,7 +71,7 @@ public struct HomeView: View {
                             repository.isBalanceVisible.toggle()
                         }) {
                             Image(systemName: repository.isBalanceVisible ? "eye.fill" : "eye.slash.fill")
-                                .foregroundColor(.secondary)
+                                .foregroundColor(.white)
                         }
                         .accessibilityIdentifier("tgBank.home.balanceVisibilityButton")
                     }
@@ -80,27 +79,31 @@ public struct HomeView: View {
                     HStack(alignment: .firstTextBaseline) {
                         if repository.isBalanceVisible {
                             Text(String(format: "$%.2f", repository.user.balance))
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
+                                .font(.system(size: 34, weight: .semibold, design: .serif))
+                                .foregroundColor(.white)
                                 .accessibilityIdentifier("tgBank.home.accountBalance")
                                 .accessibilityLabel("Total available balance")
                                 .accessibilityValue(String(format: "$%.2f", repository.user.balance))
                         } else {
                             Text("$••••••••••")
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
+                                .font(.system(size: 34, weight: .semibold, design: .serif))
+                                .foregroundColor(.white)
                                 .accessibilityIdentifier("tgBank.home.accountBalance")
                         }
                     }
 
                     Divider()
+                        .overlay(Color.white.opacity(0.25))
 
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Account Number")
                                 .font(.caption2)
-                                .foregroundColor(.secondary)
+                                .foregroundColor(.white.opacity(0.7))
                             Text(repository.user.accountNumber)
                                 .font(.footnote)
                                 .bold()
+                                .foregroundColor(.white)
                                 .accessibilityIdentifier("tgBank.home.accountNumber")
                         }
 
@@ -117,19 +120,26 @@ public struct HomeView: View {
                                 Image(systemName: copiedNotice ? "checkmark" : "doc.on.doc")
                                 Text(copiedNotice ? "Copied" : "Copy")
                                     .font(.caption2)
+                                    .foregroundColor(.tgSapphire)
                             }
                             .padding(.horizontal, 10)
                             .padding(.vertical, 5)
-                            .background(Color(uiColor: .systemGray5))
+                            .background(Color.white.opacity(0.9))
                             .cornerRadius(8)
                         }
                         .accessibilityIdentifier("tgBank.home.copyAccountNumberButton")
                     }
                 }
                 .padding()
-                .background(Color(uiColor: .secondarySystemGroupedBackground))
+                .background(
+                    LinearGradient(
+                        colors: [.tgMidnight, .tgSapphire, .tgPurple],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
                 .cornerRadius(16)
-                .shadow(color: Color.black.opacity(0.04), radius: 8, x: 0, y: 2)
+                .shadow(color: Color.tgSapphire.opacity(0.2), radius: 14, x: 0, y: 5)
                 .padding(.horizontal)
                 .accessibilityIdentifier("tgBank.home.accountBalanceCard")
 
@@ -144,7 +154,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Send",
                             icon: "paperplane.fill",
-                            color: .blue,
+                            color: .tgSapphire,
                             identifier: "tgBank.home.sendMoneyButton"
                         ) {
                             coordinator.isShowingSendMoney = true
@@ -153,7 +163,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Receive",
                             icon: "arrow.down.left",
-                            color: .green,
+                            color: .tgTeal,
                             identifier: "tgBank.home.receiveMoneyButton"
                         ) {
                             coordinator.isShowingReceiveMoney = true
@@ -162,7 +172,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "UPI Pay",
                             icon: "qrcode.viewfinder",
-                            color: .purple,
+                            color: .tgPurple,
                             identifier: "tgBank.home.upiPayButton"
                         ) {
                             coordinator.selectedTab = .payments
@@ -171,7 +181,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Add Money",
                             icon: "plus.circle.fill",
-                            color: .teal,
+                            color: .tgTeal,
                             identifier: "tgBank.home.addMoneyButton"
                         ) {
                             coordinator.isShowingAddMoney = true
@@ -180,7 +190,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Withdraw",
                             icon: "banknote.fill",
-                            color: .orange,
+                            color: .tgPink,
                             identifier: "tgBank.home.withdrawButton"
                         ) {
                             coordinator.isShowingWithdraw = true
@@ -189,7 +199,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Pay Bills",
                             icon: "doc.text.fill",
-                            color: .indigo,
+                            color: .tgSapphire,
                             identifier: "tgBank.home.payBillsButton"
                         ) {
                             coordinator.isShowingPayBills = true
@@ -198,7 +208,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "Credit",
                             icon: "creditcard.fill",
-                            color: .pink,
+                            color: .tgPink,
                             identifier: "tgBank.home.creditButton"
                         ) {
                             coordinator.selectedTab = .credit
@@ -207,7 +217,7 @@ public struct HomeView: View {
                         QuickActionButton(
                             title: "KYC",
                             icon: "person.badge.shield.checkmark.fill",
-                            color: repository.user.kycStatus == .verified ? .green : .red,
+                            color: repository.user.kycStatus == .verified ? .tgTeal : .red,
                             identifier: "tgBank.home.kycButton"
                         ) {
                             coordinator.isShowingKYCWizard = true
@@ -232,11 +242,11 @@ public struct HomeView: View {
                     }
 
                     VStack(spacing: 8) {
-                        SpendingRow(name: "Shopping", amount: "$856.99", pct: "35%", color: .blue, identifier: "tgBank.home.spendingSummary.shopping")
-                        SpendingRow(name: "Food", amount: "$245.50", pct: "18%", color: .orange, identifier: "tgBank.home.spendingSummary.food")
-                        SpendingRow(name: "Bills", amount: "$360.70", pct: "22%", color: .purple, identifier: "tgBank.home.spendingSummary.bills")
-                        SpendingRow(name: "Transfers", amount: "$212.50", pct: "15%", color: .green, identifier: "tgBank.home.spendingSummary.transfers")
-                        SpendingRow(name: "Entertainment", amount: "$99.99", pct: "10%", color: .pink, identifier: "tgBank.home.spendingSummary.entertainment")
+                        SpendingRow(name: "Shopping", amount: "$856.99", pct: "35%", color: .tgSapphire, identifier: "tgBank.home.spendingSummary.shopping")
+                        SpendingRow(name: "Food", amount: "$245.50", pct: "18%", color: .tgPink, identifier: "tgBank.home.spendingSummary.food")
+                        SpendingRow(name: "Bills", amount: "$360.70", pct: "22%", color: .tgPurple, identifier: "tgBank.home.spendingSummary.bills")
+                        SpendingRow(name: "Transfers", amount: "$212.50", pct: "15%", color: .tgTeal, identifier: "tgBank.home.spendingSummary.transfers")
+                        SpendingRow(name: "Entertainment", amount: "$99.99", pct: "10%", color: .tgPink, identifier: "tgBank.home.spendingSummary.entertainment")
                     }
                 }
                 .padding()
@@ -261,7 +271,7 @@ public struct HomeView: View {
                             Text("View All")
                                 .font(.caption)
                                 .bold()
-                                .foregroundColor(.blue)
+                                .foregroundColor(.tgSapphire)
                         }
                         .accessibilityIdentifier("tgBank.home.viewAllTransactionsButton")
                     }
@@ -393,7 +403,7 @@ struct TransactionRowView: View {
             HStack(spacing: 12) {
                 ZStack {
                     Circle()
-                        .fill(tx.isCredit ? Color.green.opacity(0.12) : Color.blue.opacity(0.12))
+                        .fill(tx.isCredit ? Color.tgTeal.opacity(0.12) : Color.tgSapphire.opacity(0.12))
                         .frame(width: 40, height: 40)
                     Image(systemName: tx.isCredit ? "arrow.down.left" : "arrow.up.right")
                         .font(.system(size: 16))

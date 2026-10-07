@@ -15,7 +15,7 @@ public struct ProfileView: View {
                 // User Card
                 VStack(spacing: 12) {
                     Circle()
-                        .fill(Color.blue)
+                        .fill(Color.tgSapphire)
                         .frame(width: 72, height: 72)
                         .overlay(Text("SG").font(.title).bold().foregroundColor(.white))
                         .accessibilityIdentifier("tgBank.profile.avatar")
@@ -111,10 +111,10 @@ public struct ProfileView: View {
                         .font(.headline)
 
                     HStack {
-                        Image(systemName: "faceid").foregroundColor(.blue)
+                        Image(systemName: "faceid").foregroundColor(.tgSapphire)
                         Text("Biometric Unlock (Face ID)")
                         Spacer()
-                        Image(systemName: "checkmark").foregroundColor(.green)
+                        Image(systemName: "checkmark").foregroundColor(.tgTeal)
                     }
                     .padding(.vertical, 4)
                     .accessibilityIdentifier("tgBank.profile.biometricSettings")
@@ -122,13 +122,13 @@ public struct ProfileView: View {
                     Divider()
 
                     HStack {
-                        Image(systemName: "lock.shield").foregroundColor(.blue)
+                        Image(systemName: "lock.shield").foregroundColor(.tgSapphire)
                         Text("Security PIN: 1234")
                         Spacer()
                         Text("Change PIN")
                             .font(.caption)
                             .bold()
-                            .foregroundColor(.blue)
+                            .foregroundColor(.tgSapphire)
                     }
                     .padding(.vertical, 4)
                     .accessibilityIdentifier("tgBank.profile.changePin")
@@ -144,16 +144,16 @@ public struct ProfileView: View {
                     coordinator.isShowingTestControls = true
                 }) {
                     HStack {
-                        Image(systemName: "slider.horizontal.3").foregroundColor(.purple)
+                        Image(systemName: "slider.horizontal.3").foregroundColor(.tgPurple)
                         Text("TestGrid Automation & Edge Case Controls")
                             .font(.subheadline)
                             .bold()
-                            .foregroundColor(.purple)
+                            .foregroundColor(.tgPurple)
                         Spacer()
                         Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary)
                     }
                     .padding()
-                    .background(Color.purple.opacity(0.12))
+                    .background(Color.tgPurple.opacity(0.12))
                     .cornerRadius(16)
                 }
                 .padding(.horizontal)
@@ -196,7 +196,7 @@ struct ThemeButton: View {
                 .foregroundColor(active ? .white : .primary)
                 .frame(maxWidth: .infinity)
                 .frame(height: 38)
-                .background(active ? Color.blue : Color(uiColor: .systemGray5))
+                .background(active ? Color.tgSapphire : Color(uiColor: .systemGray5))
                 .cornerRadius(8)
         }
         .accessibilityIdentifier(id)
@@ -217,7 +217,7 @@ struct LanguageButton: View {
                 .foregroundColor(active ? .white : .primary)
                 .frame(maxWidth: .infinity)
                 .frame(height: 36)
-                .background(active ? Color.blue : Color(uiColor: .systemGray5))
+                .background(active ? Color.tgSapphire : Color(uiColor: .systemGray5))
                 .cornerRadius(8)
         }
         .accessibilityIdentifier(id)

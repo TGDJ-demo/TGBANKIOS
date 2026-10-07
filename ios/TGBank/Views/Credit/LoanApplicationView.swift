@@ -71,8 +71,8 @@ public struct LoanApplicationView: View {
                     .bold()
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
-                    .background(Color.blue.opacity(0.12))
-                    .foregroundColor(.blue)
+                    .background(Color.tgSapphire.opacity(0.12))
+                    .foregroundColor(.tgSapphire)
                     .cornerRadius(8)
                     .accessibilityIdentifier("tgBank.loan.aprBadge")
             }
@@ -84,7 +84,7 @@ public struct LoanApplicationView: View {
                     .foregroundColor(.secondary)
                 Text(String(format: "$%.2f", calculatedEmi))
                     .font(.system(size: 36, weight: .bold))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.tgSapphire)
                     .accessibilityIdentifier("tgBank.loan.calculatedEmi")
             }
 
@@ -107,7 +107,7 @@ public struct LoanApplicationView: View {
                 VStack(alignment: .trailing, spacing: 2) {
                     Text("Total Repayment").font(.caption2).foregroundColor(.secondary)
                     Text(String(format: "$%.2f", totalRepayment))
-                        .font(.footnote).bold().foregroundColor(.purple)
+                        .font(.footnote).bold().foregroundColor(.tgPurple)
                         .accessibilityIdentifier("tgBank.loan.totalRepayment")
                 }
             }
@@ -213,7 +213,7 @@ public struct LoanApplicationView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
-                    .background(Color.purple)
+                    .background(Color.tgPurple)
                     .cornerRadius(10)
             }
             .accessibilityIdentifier("tgBank.loan.submitButton")
@@ -229,7 +229,7 @@ public struct LoanApplicationView: View {
             Image(systemName: "checkmark.seal.fill")
                 .resizable()
                 .frame(width: 64, height: 64)
-                .foregroundColor(.green)
+                .foregroundColor(.tgTeal)
 
             Text("Application Approved")
                 .font(.title2)
@@ -259,7 +259,7 @@ public struct LoanApplicationView: View {
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .frame(height: 48)
-                .background(Color.green)
+                .background(Color.tgTeal)
                 .cornerRadius(10)
                 .accessibilityIdentifier("tgBank.loan.doneButton")
         }

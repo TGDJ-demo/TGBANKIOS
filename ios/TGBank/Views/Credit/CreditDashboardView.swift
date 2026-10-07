@@ -26,17 +26,17 @@ public struct CreditDashboardView: View {
                             Text(repository.user.creditRating)
                                 .font(.subheadline)
                                 .bold()
-                                .foregroundColor(.green)
+                                .foregroundColor(.tgTeal)
                                 .accessibilityIdentifier("tgBank.credit.rating")
                         }
                         Spacer()
                         ZStack {
                             Circle()
-                                .stroke(Color.green.opacity(0.2), lineWidth: 6)
+                                .stroke(Color.tgTeal.opacity(0.2), lineWidth: 6)
                                 .frame(width: 60, height: 60)
                             Circle()
                                 .trim(from: 0, to: 0.95)
-                                .stroke(Color.green, style: StrokeStyle(lineWidth: 6, lineCap: .round))
+                                .stroke(Color.tgTeal, style: StrokeStyle(lineWidth: 6, lineCap: .round))
                                 .frame(width: 60, height: 60)
                                 .rotationEffect(.degrees(-90))
                             Text("\(repository.user.creditScore)")
@@ -75,7 +75,7 @@ public struct CreditDashboardView: View {
                         VStack(alignment: .center, spacing: 2) {
                             Text("Available Credit").font(.caption2).foregroundColor(.secondary)
                             Text(String(format: "$%.2f", repository.user.availableCredit))
-                                .font(.footnote).bold().foregroundColor(.green)
+                                .font(.footnote).bold().foregroundColor(.tgTeal)
                                 .accessibilityIdentifier("tgBank.credit.available")
                         }
                         Spacer()
@@ -108,7 +108,7 @@ public struct CreditDashboardView: View {
                                 .foregroundColor(.white)
                                 .padding(.horizontal, 14)
                                 .padding(.vertical, 8)
-                                .background(repository.user.nextPayment > 0 ? Color.blue : Color.gray)
+                                .background(repository.user.nextPayment > 0 ? Color.tgSapphire : Color.gray)
                                 .cornerRadius(8)
                         }
                         .disabled(repository.user.nextPayment <= 0)
@@ -127,8 +127,8 @@ public struct CreditDashboardView: View {
                 // Messages / Feedback
                 if let msg = increaseMessage {
                     HStack {
-                        Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
-                        Text(msg).font(.caption).foregroundColor(.green)
+                        Image(systemName: "checkmark.circle.fill").foregroundColor(.tgTeal)
+                        Text(msg).font(.caption).foregroundColor(.tgTeal)
                     }
                     .padding(.horizontal)
                     .accessibilityIdentifier("tgBank.credit.increaseSuccessMessage")
@@ -136,8 +136,8 @@ public struct CreditDashboardView: View {
 
                 if let msg = statementMessage {
                     HStack {
-                        Image(systemName: "doc.fill").foregroundColor(.blue)
-                        Text(msg).font(.caption).foregroundColor(.blue)
+                        Image(systemName: "doc.fill").foregroundColor(.tgSapphire)
+                        Text(msg).font(.caption).foregroundColor(.tgSapphire)
                     }
                     .padding(.horizontal)
                     .accessibilityIdentifier("tgBank.credit.statementSuccessMessage")
@@ -151,7 +151,7 @@ public struct CreditDashboardView: View {
                 VStack(spacing: 12) {
                     Button(action: handleCreditLimitIncrease) {
                         HStack {
-                            Image(systemName: "arrow.up.circle.fill").foregroundColor(.green)
+                            Image(systemName: "arrow.up.circle.fill").foregroundColor(.tgTeal)
                             Text("Request Credit Limit Increase (+$250k)")
                                 .font(.subheadline).bold().foregroundColor(.primary)
                             Spacer()
@@ -166,7 +166,7 @@ public struct CreditDashboardView: View {
 
                     Button(action: handleDownloadStatement) {
                         HStack {
-                            Image(systemName: "arrow.down.doc.fill").foregroundColor(.blue)
+                            Image(systemName: "arrow.down.doc.fill").foregroundColor(.tgSapphire)
                             Text("Download Statement (TG_Statement_Aug2026.pdf)")
                                 .font(.subheadline).bold().foregroundColor(.primary)
                             Spacer()
@@ -183,7 +183,7 @@ public struct CreditDashboardView: View {
                         coordinator.isShowingLoanApplication = true
                     }) {
                         HStack {
-                            Image(systemName: "signature").foregroundColor(.purple)
+                            Image(systemName: "signature").foregroundColor(.tgPurple)
                             Text("Apply for Personal Loan / New Card")
                                 .font(.subheadline).bold().foregroundColor(.primary)
                             Spacer()

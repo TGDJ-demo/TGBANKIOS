@@ -91,9 +91,9 @@ public struct SendMoneyView: View {
                             }) {
                                 VStack(spacing: 4) {
                                     Circle()
-                                        .fill(Color.blue.opacity(0.12))
+                                        .fill(Color.tgSapphire.opacity(0.12))
                                         .frame(width: 44, height: 44)
-                                        .overlay(Text(String(ben.nickname.prefix(2))).font(.subheadline).bold().foregroundColor(.blue))
+                                        .overlay(Text(String(ben.nickname.prefix(2))).font(.subheadline).bold().foregroundColor(.tgSapphire))
                                     Text(ben.nickname)
                                         .font(.caption2)
                                         .foregroundColor(.primary)
@@ -206,7 +206,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(Color.blue)
+                        .background(Color.tgSapphire)
                         .cornerRadius(10)
                 }
                 .accessibilityIdentifier("tgBank.sendMoney.continueButton")
@@ -234,7 +234,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.secondary)
                     Text("$\(Double(amountString) ?? 0, specifier: "%.2f")")
                         .font(.system(size: 32, weight: .bold))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.tgSapphire)
                         .accessibilityIdentifier("tgBank.sendMoney.reviewAmount")
                 }
 
@@ -271,7 +271,7 @@ public struct SendMoneyView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .frame(height: 48)
-                            .background(Color.blue)
+                            .background(Color.tgSapphire)
                             .cornerRadius(10)
                     }
                     .accessibilityIdentifier("tgBank.sendMoney.authorizationButton")
@@ -292,7 +292,7 @@ public struct SendMoneyView: View {
                 Image(systemName: "checkmark.circle.fill")
                     .resizable()
                     .frame(width: 64, height: 64)
-                    .foregroundColor(.green)
+                    .foregroundColor(.tgTeal)
 
                 Text("Transfer Successful")
                     .font(.title2)
@@ -315,7 +315,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(Color.green)
+                        .background(Color.tgTeal)
                         .cornerRadius(10)
                 }
                 .accessibilityIdentifier("tgBank.sendMoney.successDoneButton")
@@ -378,7 +378,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 44)
-                        .background(Color.blue)
+                        .background(Color.tgSapphire)
                         .cornerRadius(8)
                         .accessibilityIdentifier("tgBank.paymentAuth.mpinVerifyButton")
 
@@ -392,7 +392,7 @@ public struct SendMoneyView: View {
                     VStack(spacing: 12) {
                         Image(systemName: "faceid")
                             .font(.system(size: 48))
-                            .foregroundColor(.blue)
+                            .foregroundColor(.tgSapphire)
 
                         Button("Verify with Face ID / Touch ID") {
                             showAuthDialog = false
@@ -402,7 +402,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 44)
-                        .background(Color.blue)
+                        .background(Color.tgSapphire)
                         .cornerRadius(8)
                         .accessibilityIdentifier("tgBank.paymentAuth.biometricButton")
                     }
@@ -426,7 +426,7 @@ public struct SendMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 44)
-                        .background(Color.blue)
+                        .background(Color.tgSapphire)
                         .cornerRadius(8)
                         .accessibilityIdentifier("tgBank.paymentAuth.otpVerifyButton")
 
@@ -500,7 +500,7 @@ struct StepBadge: View {
     var body: some View {
         HStack(spacing: 4) {
             Circle()
-                .fill(active ? Color.blue : Color(uiColor: .systemGray4))
+                .fill(active ? Color.tgSapphire : Color(uiColor: .systemGray4))
                 .frame(width: 20, height: 20)
                 .overlay(Text("\(num)").font(.caption2).bold().foregroundColor(.white))
             Text(title)

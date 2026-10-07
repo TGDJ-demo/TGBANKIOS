@@ -50,7 +50,7 @@ public struct ReceiveMoneyView: View {
                             Text(repository.user.upiId)
                                 .font(.caption)
                                 .bold()
-                                .foregroundColor(.purple)
+                                .foregroundColor(.tgPurple)
                         }
                         .accessibilityIdentifier("tgBank.receive.upiId")
 
@@ -87,7 +87,7 @@ public struct ReceiveMoneyView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 48)
-                        .background(Color.green)
+                        .background(Color.tgTeal)
                         .cornerRadius(10)
                     }
                     .accessibilityIdentifier("tgBank.receive.shareDetailsButton")

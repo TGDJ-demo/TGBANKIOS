@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
 Xcode Project Generator for TG Bank iOS
-Generates an authentic, fully-configured TGBank.xcodeproj (and tgbank.xcodeproj)
+Generates an authentic, fully-configured TGBank.xcodeproj
 compatible with Xcode 14, 15, and 16, xcodebuild, Fastlane, and CI/CD runners.
 """
 
 import os
 import sys
 import json
-import shutil
 import hashlib
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -67,9 +66,9 @@ def setup_assets_xcassets():
                     "color-space": "srgb",
                     "components": {
                         "alpha": "1.000",
-                        "blue": "0.922",
-                        "green": "0.388",
-                        "red": "0.145"
+                        "blue": "0.430",
+                        "green": "0.220",
+                        "red": "0.080"
                     }
                 },
                 "idiom": "universal"
@@ -201,10 +200,10 @@ def generate_pbxproj():
         for f in sorted(files):
             if f.endswith(".swift"):
                 abs_path = os.path.join(root, f)
-                rel_path = os.path.relpath(abs_path, IOS_DIR)
+                rel_path = os.path.relpath(abs_path, TGBANK_SRC_DIR)
                 swift_files.append((f, rel_path))
 
-    ui_test_file = ("TGBankUITests.swift", "TGBankUITests/TGBankUITests.swift")
+    ui_test_file = ("TGBankUITests.swift", "TGBankUITests.swift")
 
     # Fixed UUIDs
     PROJ_UUID = make_uuid("PROJ_TGBANK")
@@ -278,9 +277,9 @@ def generate_pbxproj():
 
     # Assets & Plist refs
     pbx_build_files.append(f"\t\t{ASSETS_BUILD_UUID} /* Assets.xcassets in Resources */ = {{isa = PBXBuildFile; fileRef = {ASSETS_FILE_UUID} /* Assets.xcassets */; }};")
-    pbx_file_refs.append(f"\t\t{ASSETS_FILE_UUID} /* Assets.xcassets */ = {{isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = \"TGBank/Assets.xcassets\"; sourceTree = \"<group>\"; }};")
-    pbx_file_refs.append(f"\t\t{MAIN_INFOPLIST_UUID} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = \"TGBank/Info.plist\"; sourceTree = \"<group>\"; }};")
-    pbx_file_refs.append(f"\t\t{TEST_INFOPLIST_UUID} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = \"TGBankUITests/Info.plist\"; sourceTree = \"<group>\"; }};")
+    pbx_file_refs.append(f"\t\t{ASSETS_FILE_UUID} /* Assets.xcassets */ = {{isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = \"Assets.xcassets\"; sourceTree = \"<group>\"; }};")
+    pbx_file_refs.append(f"\t\t{MAIN_INFOPLIST_UUID} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = \"Info.plist\"; sourceTree = \"<group>\"; }};")
+    pbx_file_refs.append(f"\t\t{TEST_INFOPLIST_UUID} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = \"Info.plist\"; sourceTree = \"<group>\"; }};")
 
     # Products refs
     pbx_file_refs.append(f"\t\t{APP_PRODUCT_UUID} /* TGBank.app */ = {{isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGBank.app; sourceTree = BUILT_PRODUCTS_DIR; }};")
@@ -616,7 +615,9 @@ def generate_pbxproj():
 			buildSettings = {{
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -627,7 +628,7 @@ def generate_pbxproj():
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -640,7 +641,9 @@ def generate_pbxproj():
 			buildSettings = {{
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -651,7 +654,7 @@ def generate_pbxproj():
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -672,7 +675,7 @@ def generate_pbxproj():
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank.TGBankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -694,7 +697,7 @@ def generate_pbxproj():
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank.TGBankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -849,58 +852,8 @@ def generate_pbxproj():
     with open(os.path.join(XCSHARED_DIR, "TGBank.xcscheme"), "w", encoding="utf-8") as f:
         f.write(scheme_xml)
 
-    # Lowercase alias symlink: tgbank.xcodeproj -> TGBank.xcodeproj
-    lower_proj = os.path.join(IOS_DIR, "tgbank.xcodeproj")
-    if os.path.lexists(lower_proj):
-        if os.path.islink(lower_proj):
-            os.unlink(lower_proj)
-        elif os.path.isdir(lower_proj):
-            shutil.rmtree(lower_proj)
-    try:
-        os.symlink("TGBank.xcodeproj", lower_proj)
-        print("  [+] Created symlink: ios/tgbank.xcodeproj -> TGBank.xcodeproj")
-    except Exception:
-        # Fallback to copy if symlink not supported
-        shutil.copytree(XCODEPROJ_DIR, lower_proj)
-        print("  [+] Created copy: ios/tgbank.xcodeproj")
-
-    # Also build a helper script for macOS / Xcode CLI
-    build_sh_path = os.path.join(IOS_DIR, "build_ipa.sh")
-    build_sh_content = """#!/usr/bin/env bash
-# TG Bank Xcode IPA Build & Archive Script for macOS / TestGrid
-set -e
-
-PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$PROJECT_DIR"
-
-echo "=== Building TG Bank with xcodebuild ==="
-mkdir -p build
-
-# 1. Build Archive
-xcodebuild clean archive \\
-  -project TGBank.xcodeproj \\
-  -scheme TGBank \\
-  -configuration Debug \\
-  -destination 'generic/platform=iOS' \\
-  -archivePath build/TGBank.xcarchive \\
-  CODE_SIGNING_ALLOWED=NO \\
-  CODE_SIGNING_REQUIRED=NO
-
-echo "=== Extracting Payload into TGBank-debug.ipa ==="
-rm -rf build/Payload build/TGBank-debug.ipa
-mkdir -p build/Payload
-cp -R build/TGBank.xcarchive/Products/Applications/TGBank.app build/Payload/
-cd build
-zip -q -r TGBank-debug.ipa Payload
-echo "[SUCCESS] Generated build/TGBank-debug.ipa"
-"""
-    with open(build_sh_path, "w", encoding="utf-8") as f:
-        f.write(build_sh_content)
-    os.chmod(build_sh_path, 0o755)
-
     print(f"[SUCCESS] Generated complete Xcode project at:")
     print(f"  -> {XCODEPROJ_DIR}")
-    print(f"  -> {lower_proj}")
 
 if __name__ == "__main__":
     setup_assets_xcassets()

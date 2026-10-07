@@ -24,7 +24,7 @@ public struct PayBillsView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .resizable()
                                 .frame(width: 64, height: 64)
-                                .foregroundColor(.green)
+                                .foregroundColor(.tgTeal)
 
                             Text("Bill Payment Successful")
                                 .font(.title2)
@@ -39,7 +39,7 @@ public struct PayBillsView: View {
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 48)
-                                .background(Color.green)
+                                .background(Color.tgTeal)
                                 .cornerRadius(10)
                         }
                         .padding()
@@ -94,7 +94,7 @@ public struct PayBillsView: View {
                                     .foregroundColor(.white)
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 50)
-                                    .background(Color.indigo)
+                                    .background(Color.tgSapphire)
                                     .cornerRadius(10)
                             }
                             .accessibilityIdentifier("tgBank.payBills.submitButton")

@@ -6,6 +6,12 @@ import UIKit
 
 // MARK: - Safe Cross-Platform Color Extensions
 extension Color {
+    public static let tgSapphire = Color(red: 0.08, green: 0.22, blue: 0.43)
+    public static let tgTeal = Color(red: 0.05, green: 0.58, blue: 0.55)
+    public static let tgPink = Color(red: 0.82, green: 0.28, blue: 0.52)
+    public static let tgPurple = Color(red: 0.43, green: 0.31, blue: 0.65)
+    public static let tgMidnight = Color(red: 0.035, green: 0.08, blue: 0.16)
+
     #if canImport(UIKit)
     /// Convenience initializer mapping UIColor directly to SwiftUI Color
     /// without resolving ambiguity against CGColor.

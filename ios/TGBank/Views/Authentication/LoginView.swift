@@ -25,11 +25,11 @@ public struct LoginView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 64, height: 64)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.tgSapphire)
                         .accessibilityIdentifier("tgBank.login.logo")
 
                     Text("TG Bank Mobile")
-                        .font(.system(size: 28, weight: .bold))
+                        .font(.system(size: 28, weight: .semibold, design: .serif))
                         .accessibilityIdentifier("tgBank.login.title")
 
                     Text("Secure Enterprise Banking")
@@ -41,7 +41,7 @@ public struct LoginView: View {
                 // Demo account indicator
                 HStack(spacing: 6) {
                     Circle()
-                        .fill(Color.green)
+                        .fill(Color.tgTeal)
                         .frame(width: 8, height: 8)
                     Text("Predefined Demo Account: Sanjay G / 1234")
                         .font(.caption)
@@ -117,7 +117,7 @@ public struct LoginView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .frame(height: 50)
-                            .background(Color.blue)
+                            .background(Color.tgSapphire)
                             .cornerRadius(10)
                     }
                     .accessibilityIdentifier("tgBank.login.signInButton")
@@ -129,10 +129,10 @@ public struct LoginView: View {
                             Text("Login with Fingerprint / Face")
                         }
                         .font(.subheadline)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.tgSapphire)
                         .frame(maxWidth: .infinity)
                         .frame(height: 48)
-                        .background(Color.blue.opacity(0.1))
+                        .background(Color.tgSapphire.opacity(0.1))
                         .cornerRadius(10)
                     }
                     .accessibilityIdentifier("tgBank.login.biometricButton")

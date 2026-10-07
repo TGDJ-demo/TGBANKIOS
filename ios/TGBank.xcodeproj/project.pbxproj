@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7DE02F9902671898E3F6B49 /* TGBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B008C0066987E375C1B49DD5 /* TGBankApp.swift */; };
-		6C04C3CD92552130D0FEE034 /* Beneficiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B75376868036409D43779B /* Beneficiary.swift */; };
-		6960B787389A80C4ECB6A933 /* EliteCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */; };
-		8255C9F63412D734FEBB0127 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */; };
-		5370DDC9C7B9656D464A1ADB /* TestControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7396039F673BC1D1FF0112D /* TestControlState.swift */; };
-		FC12EBE72302C28E801F3F53 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */; };
-		3E59669886D94E7C8D6A5A0E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AE01F05BF9C8631610022 /* UserProfile.swift */; };
-		137B40BA39F44E214235C286 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7995F6955870973906D92723 /* NavigationCoordinator.swift */; };
-		FAA862683B4284808EA995D8 /* BankRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFF12784CA54EC58ED9D7 /* BankRepository.swift */; };
-		F99EFC15759FA31122A91BB6 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */; };
-		4EAB0321F3772194C4ECBA52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */; };
-		2B35EB12836E799426F850D7 /* CreditDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */; };
-		261C41D7C4E1D3D60CD77F61 /* LoanApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */; };
-		53B9916D1954D512EA4D8F59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07302C04FBE0863AA127B /* HomeView.swift */; };
-		643E3CCC18E32E391A2EED5B /* KYCWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31358722B88896CC250CD2E /* KYCWizardView.swift */; };
-		C4F08B31788693E01F3D1161 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */; };
-		50C1BBFB6E33CB16505DF571 /* AddMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */; };
-		929FF0399EC4219E03866AB9 /* PayBillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97DC712FF6BE637B58804D /* PayBillsView.swift */; };
-		8B399F0C17A5D5F5CB597FF1 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A31598BC9AA49471403EE /* QRScannerView.swift */; };
-		963744471D914944A1C55B76 /* ReceiveMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */; };
-		F54F5C50D5F651280C1D9E9E /* SendMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */; };
-		D766223D10B50BFB70820E07 /* UPIPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */; };
-		67285B62D16C36654120F682 /* WithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494767BE438C19D9210F6E03 /* WithdrawView.swift */; };
-		C56B77B2774918C9C2A472B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27562D0E1948AAB51B969F40 /* ProfileView.swift */; };
-		28256F87EBBD8E6CDC7E9FD3 /* TestControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */; };
-		C5E1C5C30462F60B5EF1FCBA /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */; };
-		B7223AEF895F0ED7A69AF74E /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */; };
-		2BCA330C5D65CED30DD75E65 /* TGBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */; };
+		B709254B9B6AEB7913AAF913 /* TGBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B03A6C707C8861356B9AA /* TGBankApp.swift */; };
+		92294CC8BC5C3628294E0CBF /* Beneficiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA734432C94036F6C6DE53 /* Beneficiary.swift */; };
+		4E9639DF9937A1B27E771DE6 /* EliteCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04D61A3A21B735A69BFE2B /* EliteCreditCard.swift */; };
+		7ED81E4235003AEDB23C6AF0 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6563B50200D7A35ED18BE073 /* NotificationItem.swift */; };
+		D7A665D6A96720094696F6A5 /* TestControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DC9E7DFBBCCF40A66306A /* TestControlState.swift */; };
+		21B773C4FC772EE3D21ECCDB /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232060A0CCA76D7D49F317AB /* Transaction.swift */; };
+		BD49F62540E25D817A57927F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B7A9AC87AF02ACDADC1D3 /* UserProfile.swift */; };
+		4F3DBB7EA89F417948CC1076 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E3266AA007DAD513F1B03 /* NavigationCoordinator.swift */; };
+		EAF0A0899F1C70D6605205A2 /* BankRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2F7EE2E36A37691C77C29 /* BankRepository.swift */; };
+		340722E57F01B5E949ADB6CB /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC2491C123581F827C245B0 /* Color+Theme.swift */; };
+		F65E839C3B67248C2938517C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3491A7ED49D9E5B12FA2B /* LoginView.swift */; };
+		AA55591AEDF5E697F58B19DB /* CreditDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779ECA26F93460CB3DACA0 /* CreditDashboardView.swift */; };
+		B6301D7F15793C8BF3685322 /* LoanApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523A12BA08F186010384242 /* LoanApplicationView.swift */; };
+		83ADA736DABDC7FCC5A219B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5714D0F1A569F58BCC2706B /* HomeView.swift */; };
+		D9C334FE4A868D50B6132F63 /* KYCWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244B10B910C9FE9395B946F7 /* KYCWizardView.swift */; };
+		B77ED1F47AB8C685BE3C1C8A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8740170D670E4E23F3D36D12 /* NotificationsView.swift */; };
+		A664EDA31AB250576ABE85BD /* AddMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79F77897C3CCD8B0718622 /* AddMoneyView.swift */; };
+		B77A8CE9BE18715F0C1669A4 /* PayBillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFC77DFB156814D37EB971C /* PayBillsView.swift */; };
+		431DFB741D54C73BE77B5E9F /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA27949A70B641F8197A757 /* QRScannerView.swift */; };
+		A36FE1C2C7EF304A7E0C717D /* ReceiveMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334EC8FFE655220E4F63B99 /* ReceiveMoneyView.swift */; };
+		9471D233E6730CE1C483D150 /* SendMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179C47A56AB7D358F124D5B6 /* SendMoneyView.swift */; };
+		CBC3D3572C6DF2F5851E5538 /* UPIPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810AE029C2B857A48FDE712 /* UPIPayView.swift */; };
+		88CEB36EFE7E4DD473F87C26 /* WithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCA022968AC920C62FD1BD3 /* WithdrawView.swift */; };
+		52806C615456A803F83CAB08 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A361C0686B2E91E9369865 /* ProfileView.swift */; };
+		86F7C1CA57F409E180A61794 /* TestControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A34424820676B2CFE4630 /* TestControlsView.swift */; };
+		540A92AA5988534916EFFF10 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D967BA09CF9AC773CC98B /* TransactionDetailView.swift */; };
+		82FB5F18F2B3ED39DA20B07F /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B52A1A44EEF0561C4A831 /* TransactionsListView.swift */; };
+		EA11A1E5603578A8DC6E963A /* TGBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59433E41D060B74EB630AF4E /* TGBankUITests.swift */; };
 		3A3BD8160C49D17D9C36657D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58660C7C3945120B125DFF0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -49,37 +49,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B008C0066987E375C1B49DD5 /* TGBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/App/TGBankApp.swift"; sourceTree = "<group>"; };
-		29B75376868036409D43779B /* Beneficiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/Beneficiary.swift"; sourceTree = "<group>"; };
-		97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/EliteCreditCard.swift"; sourceTree = "<group>"; };
-		3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/NotificationItem.swift"; sourceTree = "<group>"; };
-		A7396039F673BC1D1FF0112D /* TestControlState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/TestControlState.swift"; sourceTree = "<group>"; };
-		88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/Transaction.swift"; sourceTree = "<group>"; };
-		096AE01F05BF9C8631610022 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Models/UserProfile.swift"; sourceTree = "<group>"; };
-		7995F6955870973906D92723 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Navigation/NavigationCoordinator.swift"; sourceTree = "<group>"; };
-		993EFF12784CA54EC58ED9D7 /* BankRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Repository/BankRepository.swift"; sourceTree = "<group>"; };
-		9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Theme/Color+Theme.swift"; sourceTree = "<group>"; };
-		A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Authentication/LoginView.swift"; sourceTree = "<group>"; };
-		2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Credit/CreditDashboardView.swift"; sourceTree = "<group>"; };
-		B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Credit/LoanApplicationView.swift"; sourceTree = "<group>"; };
-		4ED07302C04FBE0863AA127B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Home/HomeView.swift"; sourceTree = "<group>"; };
-		C31358722B88896CC250CD2E /* KYCWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/KYC/KYCWizardView.swift"; sourceTree = "<group>"; };
-		5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Notifications/NotificationsView.swift"; sourceTree = "<group>"; };
-		A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/AddMoneyView.swift"; sourceTree = "<group>"; };
-		3C97DC712FF6BE637B58804D /* PayBillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/PayBillsView.swift"; sourceTree = "<group>"; };
-		9D0A31598BC9AA49471403EE /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/QRScannerView.swift"; sourceTree = "<group>"; };
-		4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/ReceiveMoneyView.swift"; sourceTree = "<group>"; };
-		86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/SendMoneyView.swift"; sourceTree = "<group>"; };
-		2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/UPIPayView.swift"; sourceTree = "<group>"; };
-		494767BE438C19D9210F6E03 /* WithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Payments/WithdrawView.swift"; sourceTree = "<group>"; };
-		27562D0E1948AAB51B969F40 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Profile/ProfileView.swift"; sourceTree = "<group>"; };
-		7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/TestControls/TestControlsView.swift"; sourceTree = "<group>"; };
-		F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Transactions/TransactionDetailView.swift"; sourceTree = "<group>"; };
-		DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBank/Views/Transactions/TransactionsListView.swift"; sourceTree = "<group>"; };
-		9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBankUITests/TGBankUITests.swift"; sourceTree = "<group>"; };
-		B58660C7C3945120B125DFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TGBank/Assets.xcassets"; sourceTree = "<group>"; };
-		00B6E0AEFC136165F82A38E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGBank/Info.plist"; sourceTree = "<group>"; };
-		D4031DA3531D5CEEF2DDA641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TGBankUITests/Info.plist"; sourceTree = "<group>"; };
+		612B03A6C707C8861356B9AA /* TGBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/TGBankApp.swift"; sourceTree = "<group>"; };
+		05EA734432C94036F6C6DE53 /* Beneficiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Beneficiary.swift"; sourceTree = "<group>"; };
+		8F04D61A3A21B735A69BFE2B /* EliteCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/EliteCreditCard.swift"; sourceTree = "<group>"; };
+		6563B50200D7A35ED18BE073 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/NotificationItem.swift"; sourceTree = "<group>"; };
+		6F7DC9E7DFBBCCF40A66306A /* TestControlState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/TestControlState.swift"; sourceTree = "<group>"; };
+		232060A0CCA76D7D49F317AB /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Transaction.swift"; sourceTree = "<group>"; };
+		558B7A9AC87AF02ACDADC1D3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/UserProfile.swift"; sourceTree = "<group>"; };
+		357E3266AA007DAD513F1B03 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation/NavigationCoordinator.swift"; sourceTree = "<group>"; };
+		BFC2F7EE2E36A37691C77C29 /* BankRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository/BankRepository.swift"; sourceTree = "<group>"; };
+		7CC2491C123581F827C245B0 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme/Color+Theme.swift"; sourceTree = "<group>"; };
+		2AD3491A7ED49D9E5B12FA2B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Authentication/LoginView.swift"; sourceTree = "<group>"; };
+		64779ECA26F93460CB3DACA0 /* CreditDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Credit/CreditDashboardView.swift"; sourceTree = "<group>"; };
+		0523A12BA08F186010384242 /* LoanApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Credit/LoanApplicationView.swift"; sourceTree = "<group>"; };
+		E5714D0F1A569F58BCC2706B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Home/HomeView.swift"; sourceTree = "<group>"; };
+		244B10B910C9FE9395B946F7 /* KYCWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/KYC/KYCWizardView.swift"; sourceTree = "<group>"; };
+		8740170D670E4E23F3D36D12 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Notifications/NotificationsView.swift"; sourceTree = "<group>"; };
+		3C79F77897C3CCD8B0718622 /* AddMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/AddMoneyView.swift"; sourceTree = "<group>"; };
+		8CFC77DFB156814D37EB971C /* PayBillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/PayBillsView.swift"; sourceTree = "<group>"; };
+		DEA27949A70B641F8197A757 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/QRScannerView.swift"; sourceTree = "<group>"; };
+		F334EC8FFE655220E4F63B99 /* ReceiveMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/ReceiveMoneyView.swift"; sourceTree = "<group>"; };
+		179C47A56AB7D358F124D5B6 /* SendMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/SendMoneyView.swift"; sourceTree = "<group>"; };
+		8810AE029C2B857A48FDE712 /* UPIPayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/UPIPayView.swift"; sourceTree = "<group>"; };
+		FDCA022968AC920C62FD1BD3 /* WithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Payments/WithdrawView.swift"; sourceTree = "<group>"; };
+		00A361C0686B2E91E9369865 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Profile/ProfileView.swift"; sourceTree = "<group>"; };
+		F60A34424820676B2CFE4630 /* TestControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/TestControls/TestControlsView.swift"; sourceTree = "<group>"; };
+		A06D967BA09CF9AC773CC98B /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Transactions/TransactionDetailView.swift"; sourceTree = "<group>"; };
+		200B52A1A44EEF0561C4A831 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Transactions/TransactionsListView.swift"; sourceTree = "<group>"; };
+		59433E41D060B74EB630AF4E /* TGBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TGBankUITests.swift"; sourceTree = "<group>"; };
+		B58660C7C3945120B125DFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		00B6E0AEFC136165F82A38E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		D4031DA3531D5CEEF2DDA641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
 		7E543B1122DB7E8F52AADDA2 /* TGBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137A9756356DDD458E39FC2E /* TGBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TGBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,33 +116,33 @@
 			children = (
 				B58660C7C3945120B125DFF0 /* Assets.xcassets */,
 				00B6E0AEFC136165F82A38E4 /* Info.plist */,
-				B008C0066987E375C1B49DD5 /* TGBankApp.swift */,
-				29B75376868036409D43779B /* Beneficiary.swift */,
-				97FB0A35AA609E952350E4A5 /* EliteCreditCard.swift */,
-				3D10B7F99C65E7A4DFA3557A /* NotificationItem.swift */,
-				A7396039F673BC1D1FF0112D /* TestControlState.swift */,
-				88BA8E4F25B2DF113BDCB7DB /* Transaction.swift */,
-				096AE01F05BF9C8631610022 /* UserProfile.swift */,
-				7995F6955870973906D92723 /* NavigationCoordinator.swift */,
-				993EFF12784CA54EC58ED9D7 /* BankRepository.swift */,
-				9F93BF99F59EE859ED0DE01E /* Color+Theme.swift */,
-				A0C2504040D0BC2ABDBD1ACC /* LoginView.swift */,
-				2BA9E637F8F0C2BAE0AD3013 /* CreditDashboardView.swift */,
-				B63D4B2D804D3DE8715FCF55 /* LoanApplicationView.swift */,
-				4ED07302C04FBE0863AA127B /* HomeView.swift */,
-				C31358722B88896CC250CD2E /* KYCWizardView.swift */,
-				5B9B3DF5505DB3E964C211A3 /* NotificationsView.swift */,
-				A57DC98BF74BCCD6356D7C8A /* AddMoneyView.swift */,
-				3C97DC712FF6BE637B58804D /* PayBillsView.swift */,
-				9D0A31598BC9AA49471403EE /* QRScannerView.swift */,
-				4F1626085D01E9A5816A59F2 /* ReceiveMoneyView.swift */,
-				86E216B52DCF8CF43AAB9C8B /* SendMoneyView.swift */,
-				2ED0ED7EE9AFA912387553A5 /* UPIPayView.swift */,
-				494767BE438C19D9210F6E03 /* WithdrawView.swift */,
-				27562D0E1948AAB51B969F40 /* ProfileView.swift */,
-				7E054CDE558517FB3B2CEBB5 /* TestControlsView.swift */,
-				F1D2BA1F05F7178C72FEDD2E /* TransactionDetailView.swift */,
-				DC26F896DDF1487DAD6B3E48 /* TransactionsListView.swift */,
+				612B03A6C707C8861356B9AA /* TGBankApp.swift */,
+				05EA734432C94036F6C6DE53 /* Beneficiary.swift */,
+				8F04D61A3A21B735A69BFE2B /* EliteCreditCard.swift */,
+				6563B50200D7A35ED18BE073 /* NotificationItem.swift */,
+				6F7DC9E7DFBBCCF40A66306A /* TestControlState.swift */,
+				232060A0CCA76D7D49F317AB /* Transaction.swift */,
+				558B7A9AC87AF02ACDADC1D3 /* UserProfile.swift */,
+				357E3266AA007DAD513F1B03 /* NavigationCoordinator.swift */,
+				BFC2F7EE2E36A37691C77C29 /* BankRepository.swift */,
+				7CC2491C123581F827C245B0 /* Color+Theme.swift */,
+				2AD3491A7ED49D9E5B12FA2B /* LoginView.swift */,
+				64779ECA26F93460CB3DACA0 /* CreditDashboardView.swift */,
+				0523A12BA08F186010384242 /* LoanApplicationView.swift */,
+				E5714D0F1A569F58BCC2706B /* HomeView.swift */,
+				244B10B910C9FE9395B946F7 /* KYCWizardView.swift */,
+				8740170D670E4E23F3D36D12 /* NotificationsView.swift */,
+				3C79F77897C3CCD8B0718622 /* AddMoneyView.swift */,
+				8CFC77DFB156814D37EB971C /* PayBillsView.swift */,
+				DEA27949A70B641F8197A757 /* QRScannerView.swift */,
+				F334EC8FFE655220E4F63B99 /* ReceiveMoneyView.swift */,
+				179C47A56AB7D358F124D5B6 /* SendMoneyView.swift */,
+				8810AE029C2B857A48FDE712 /* UPIPayView.swift */,
+				FDCA022968AC920C62FD1BD3 /* WithdrawView.swift */,
+				00A361C0686B2E91E9369865 /* ProfileView.swift */,
+				F60A34424820676B2CFE4630 /* TestControlsView.swift */,
+				A06D967BA09CF9AC773CC98B /* TransactionDetailView.swift */,
+				200B52A1A44EEF0561C4A831 /* TransactionsListView.swift */,
 			);
 			path = TGBank;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 		9E52A7DF9C1C5B39215CEEA0 /* TGBankUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9E25E2B0F564EDD5F7C5CADD /* TGBankUITests.swift */,
+				59433E41D060B74EB630AF4E /* TGBankUITests.swift */,
 				D4031DA3531D5CEEF2DDA641 /* Info.plist */,
 			);
 			path = TGBankUITests;
@@ -264,33 +264,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7DE02F9902671898E3F6B49 /* TGBankApp.swift in Sources */,
-				6C04C3CD92552130D0FEE034 /* Beneficiary.swift in Sources */,
-				6960B787389A80C4ECB6A933 /* EliteCreditCard.swift in Sources */,
-				8255C9F63412D734FEBB0127 /* NotificationItem.swift in Sources */,
-				5370DDC9C7B9656D464A1ADB /* TestControlState.swift in Sources */,
-				FC12EBE72302C28E801F3F53 /* Transaction.swift in Sources */,
-				3E59669886D94E7C8D6A5A0E /* UserProfile.swift in Sources */,
-				137B40BA39F44E214235C286 /* NavigationCoordinator.swift in Sources */,
-				FAA862683B4284808EA995D8 /* BankRepository.swift in Sources */,
-				F99EFC15759FA31122A91BB6 /* Color+Theme.swift in Sources */,
-				4EAB0321F3772194C4ECBA52 /* LoginView.swift in Sources */,
-				2B35EB12836E799426F850D7 /* CreditDashboardView.swift in Sources */,
-				261C41D7C4E1D3D60CD77F61 /* LoanApplicationView.swift in Sources */,
-				53B9916D1954D512EA4D8F59 /* HomeView.swift in Sources */,
-				643E3CCC18E32E391A2EED5B /* KYCWizardView.swift in Sources */,
-				C4F08B31788693E01F3D1161 /* NotificationsView.swift in Sources */,
-				50C1BBFB6E33CB16505DF571 /* AddMoneyView.swift in Sources */,
-				929FF0399EC4219E03866AB9 /* PayBillsView.swift in Sources */,
-				8B399F0C17A5D5F5CB597FF1 /* QRScannerView.swift in Sources */,
-				963744471D914944A1C55B76 /* ReceiveMoneyView.swift in Sources */,
-				F54F5C50D5F651280C1D9E9E /* SendMoneyView.swift in Sources */,
-				D766223D10B50BFB70820E07 /* UPIPayView.swift in Sources */,
-				67285B62D16C36654120F682 /* WithdrawView.swift in Sources */,
-				C56B77B2774918C9C2A472B8 /* ProfileView.swift in Sources */,
-				28256F87EBBD8E6CDC7E9FD3 /* TestControlsView.swift in Sources */,
-				C5E1C5C30462F60B5EF1FCBA /* TransactionDetailView.swift in Sources */,
-				B7223AEF895F0ED7A69AF74E /* TransactionsListView.swift in Sources */,
+				B709254B9B6AEB7913AAF913 /* TGBankApp.swift in Sources */,
+				92294CC8BC5C3628294E0CBF /* Beneficiary.swift in Sources */,
+				4E9639DF9937A1B27E771DE6 /* EliteCreditCard.swift in Sources */,
+				7ED81E4235003AEDB23C6AF0 /* NotificationItem.swift in Sources */,
+				D7A665D6A96720094696F6A5 /* TestControlState.swift in Sources */,
+				21B773C4FC772EE3D21ECCDB /* Transaction.swift in Sources */,
+				BD49F62540E25D817A57927F /* UserProfile.swift in Sources */,
+				4F3DBB7EA89F417948CC1076 /* NavigationCoordinator.swift in Sources */,
+				EAF0A0899F1C70D6605205A2 /* BankRepository.swift in Sources */,
+				340722E57F01B5E949ADB6CB /* Color+Theme.swift in Sources */,
+				F65E839C3B67248C2938517C /* LoginView.swift in Sources */,
+				AA55591AEDF5E697F58B19DB /* CreditDashboardView.swift in Sources */,
+				B6301D7F15793C8BF3685322 /* LoanApplicationView.swift in Sources */,
+				83ADA736DABDC7FCC5A219B0 /* HomeView.swift in Sources */,
+				D9C334FE4A868D50B6132F63 /* KYCWizardView.swift in Sources */,
+				B77ED1F47AB8C685BE3C1C8A /* NotificationsView.swift in Sources */,
+				A664EDA31AB250576ABE85BD /* AddMoneyView.swift in Sources */,
+				B77A8CE9BE18715F0C1669A4 /* PayBillsView.swift in Sources */,
+				431DFB741D54C73BE77B5E9F /* QRScannerView.swift in Sources */,
+				A36FE1C2C7EF304A7E0C717D /* ReceiveMoneyView.swift in Sources */,
+				9471D233E6730CE1C483D150 /* SendMoneyView.swift in Sources */,
+				CBC3D3572C6DF2F5851E5538 /* UPIPayView.swift in Sources */,
+				88CEB36EFE7E4DD473F87C26 /* WithdrawView.swift in Sources */,
+				52806C615456A803F83CAB08 /* ProfileView.swift in Sources */,
+				86F7C1CA57F409E180A61794 /* TestControlsView.swift in Sources */,
+				540A92AA5988534916EFFF10 /* TransactionDetailView.swift in Sources */,
+				82FB5F18F2B3ED39DA20B07F /* TransactionsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BCA330C5D65CED30DD75E65 /* TGBankUITests.swift in Sources */,
+				EA11A1E5603578A8DC6E963A /* TGBankUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -441,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
@@ -465,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,7 +490,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank.TGBankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -508,7 +512,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.testgrid.tgbank.TGBankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.tgbank.TGBankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

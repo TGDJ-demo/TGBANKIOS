@@ -1,0 +1,8 @@
+{
+  "platformName": "iOS",
+  "appium:automationName": "XCUITest",
+  "appium:deviceName": "iPhone 17 Pro",
+  "appium:app": "ios/build/DerivedData/Build/Products/Debug-iphonesimulator/TGBank.app",
+  "appium:bundleId": "com.apple.tgbank",
+  "appium:noReset": false
+}

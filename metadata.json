@@ -1,6 +1,0 @@
-{
-  "name": "TG Bank — Native iOS Application",
-  "description": "TG Bank native iOS application and TestGrid automation demo featuring Swift/SwiftUI architecture, deterministic mock banking, Appium/XCUITest accessibility contracts, and live interactive test simulator.",
-  "requestFramePermissions": ["camera"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

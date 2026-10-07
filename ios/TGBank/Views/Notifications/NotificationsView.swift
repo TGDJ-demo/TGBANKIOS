@@ -91,7 +91,7 @@ struct NotificationRowView: View {
         HStack(alignment: .top, spacing: 12) {
             ZStack {
                 Circle()
-                    .fill(item.isRead ? Color(uiColor: .systemGray5) : Color.blue.opacity(0.15))
+                    .fill(item.isRead ? Color(uiColor: .systemGray5) : Color.tgSapphire.opacity(0.15))
                     .frame(width: 36, height: 36)
                 Image(systemName: iconForType(item.type))
                     .font(.system(size: 16))
@@ -125,7 +125,7 @@ struct NotificationRowView: View {
                         .font(.system(size: 9, weight: .bold))
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)
-                        .background(item.isRead ? Color(uiColor: .systemGray5) : Color.blue.opacity(0.2))
+                        .background(item.isRead ? Color(uiColor: .systemGray5) : Color.tgSapphire.opacity(0.2))
                         .foregroundColor(item.isRead ? .secondary : .blue)
                         .cornerRadius(4)
                         .accessibilityIdentifier("tgBank.notifications.item.\(item.id).readState")

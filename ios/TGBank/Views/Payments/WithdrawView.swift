@@ -24,7 +24,7 @@ public struct WithdrawView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .resizable()
                                 .frame(width: 64, height: 64)
-                                .foregroundColor(.orange)
+                                .foregroundColor(.tgPink)
 
                             Text("Withdrawal Authorized")
                                 .font(.title2)
@@ -41,7 +41,7 @@ public struct WithdrawView: View {
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 48)
-                                .background(Color.orange)
+                                .background(Color.tgPink)
                                 .cornerRadius(10)
                                 .accessibilityIdentifier("tgBank.withdraw.doneButton")
                         }
@@ -86,7 +86,7 @@ public struct WithdrawView: View {
                                     .foregroundColor(.white)
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 50)
-                                    .background(Color.orange)
+                                    .background(Color.tgPink)
                                     .cornerRadius(10)
                             }
                             .accessibilityIdentifier("tgBank.withdraw.submitButton")
@@ -158,7 +158,7 @@ struct MethodButton: View {
                 .foregroundColor(active ? .white : .primary)
                 .frame(maxWidth: .infinity)
                 .frame(height: 38)
-                .background(active ? Color.orange : Color(uiColor: .systemGray5))
+                .background(active ? Color.tgPink : Color(uiColor: .systemGray5))
                 .cornerRadius(8)
         }
         .accessibilityIdentifier(id)

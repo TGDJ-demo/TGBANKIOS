@@ -1,27 +1,72 @@
 #!/usr/bin/env bash
-# TG Bank Xcode IPA Build & Archive Script for macOS / TestGrid
-set -e
+set -euo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$PROJECT_DIR"
+BUILD_DIR="$PROJECT_DIR/build"
+ARCHIVE_PATH="$BUILD_DIR/TGBank.xcarchive"
+EXPORT_PATH="$BUILD_DIR/export"
+EXPORT_OPTIONS="$BUILD_DIR/ExportOptions.plist"
+EXPORT_METHOD="${EXPORT_METHOD:-development}"
 
-echo "=== Building TG Bank with xcodebuild ==="
-mkdir -p build
+if [[ -z "${DEVELOPMENT_TEAM:-}" ]]; then
+  echo "Set DEVELOPMENT_TEAM to your Apple Developer Team ID; Xcode signing is required for a device IPA." >&2
+  exit 2
+fi
 
-# 1. Build Archive
-xcodebuild clean archive \
-  -project TGBank.xcodeproj \
+case "$EXPORT_METHOD" in
+  development|ad-hoc|app-store-connect|enterprise) ;;
+  *)
+    echo "Unsupported EXPORT_METHOD: $EXPORT_METHOD" >&2
+    exit 2
+    ;;
+esac
+
+mkdir -p "$BUILD_DIR"
+rm -rf "$ARCHIVE_PATH" "$EXPORT_PATH"
+
+SIGNING_SETTINGS=(
+  "DEVELOPMENT_TEAM=$DEVELOPMENT_TEAM"
+  "CODE_SIGN_STYLE=Automatic"
+  "CODE_SIGNING_ALLOWED=YES"
+)
+if [[ -n "${CODE_SIGN_IDENTITY:-}" ]]; then
+  SIGNING_SETTINGS+=("CODE_SIGN_IDENTITY=$CODE_SIGN_IDENTITY")
+fi
+if [[ -n "${PROVISIONING_PROFILE_SPECIFIER:-}" ]]; then
+  SIGNING_SETTINGS+=("PROVISIONING_PROFILE_SPECIFIER=$PROVISIONING_PROFILE_SPECIFIER")
+fi
+
+xcodebuild \
+  -project "$PROJECT_DIR/TGBank.xcodeproj" \
   -scheme TGBank \
-  -configuration Debug \
+  -configuration Release \
   -destination 'generic/platform=iOS' \
-  -archivePath build/TGBank.xcarchive \
-  CODE_SIGNING_ALLOWED=NO \
-  CODE_SIGNING_REQUIRED=NO
+  -archivePath "$ARCHIVE_PATH" \
+  -allowProvisioningUpdates \
+  "${SIGNING_SETTINGS[@]}" \
+  archive
 
-echo "=== Extracting Payload into TGBank-debug.ipa ==="
-rm -rf build/Payload build/TGBank-debug.ipa
-mkdir -p build/Payload
-cp -R build/TGBank.xcarchive/Products/Applications/TGBank.app build/Payload/
-cd build
-zip -q -r TGBank-debug.ipa Payload
-echo "[SUCCESS] Generated build/TGBank-debug.ipa"
+cat > "$EXPORT_OPTIONS" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>method</key>
+  <string>$EXPORT_METHOD</string>
+  <key>signingStyle</key>
+  <string>automatic</string>
+  <key>teamID</key>
+  <string>$DEVELOPMENT_TEAM</string>
+</dict>
+</plist>
+PLIST
+
+xcodebuild \
+  -exportArchive \
+  -archivePath "$ARCHIVE_PATH" \
+  -exportPath "$EXPORT_PATH" \
+  -exportOptionsPlist "$EXPORT_OPTIONS" \
+  -allowProvisioningUpdates
+
+cp "$EXPORT_PATH/TGBank.ipa" "$BUILD_DIR/TGBank.ipa"
+echo "Signed device IPA: $BUILD_DIR/TGBank.ipa"

@@ -28,7 +28,7 @@ public struct QRScannerView: View {
                     
                     // Scanning line animation
                     Rectangle()
-                        .fill(Color.purple)
+                        .fill(Color.tgPurple)
                         .frame(width: 220, height: 2)
                 }
                 .accessibilityIdentifier("tgBank.qrScanner.reticle")

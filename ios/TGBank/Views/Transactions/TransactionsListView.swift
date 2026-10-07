@@ -147,7 +147,7 @@ struct FilterChip: View {
                 .bold()
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
-                .background(active ? Color.blue : Color(uiColor: .secondarySystemGroupedBackground))
+                .background(active ? Color.tgSapphire : Color(uiColor: .secondarySystemGroupedBackground))
                 .foregroundColor(active ? .white : .primary)
                 .cornerRadius(14)
         }

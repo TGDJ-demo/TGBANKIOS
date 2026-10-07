@@ -98,8 +98,8 @@ public struct UPIPayView: View {
 
                 if !merchantName.isEmpty {
                     HStack {
-                        Image(systemName: "checkmark.seal.fill").foregroundColor(.blue)
-                        Text(merchantName).font(.caption).bold().foregroundColor(.blue)
+                        Image(systemName: "checkmark.seal.fill").foregroundColor(.tgSapphire)
+                        Text(merchantName).font(.caption).bold().foregroundColor(.tgSapphire)
                         Spacer()
                     }
                 }
@@ -138,7 +138,7 @@ public struct UPIPayView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(Color.purple)
+                        .background(Color.tgPurple)
                         .cornerRadius(10)
                 }
                 .accessibilityIdentifier("tgBank.upi.payButton")
@@ -151,7 +151,7 @@ public struct UPIPayView: View {
                         Text("Simulate Demo QR Payment ($125.00)")
                     }
                     .font(.subheadline)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.tgPurple)
                 }
                 .padding(.top, 4)
                 .accessibilityIdentifier("tgBank.upi.demoQrButton")
@@ -169,7 +169,7 @@ public struct UPIPayView: View {
             Image(systemName: "checkmark.circle.fill")
                 .resizable()
                 .frame(width: 64, height: 64)
-                .foregroundColor(.green)
+                .foregroundColor(.tgTeal)
 
             Text("Payment Successful")
                 .font(.title2)
@@ -212,7 +212,7 @@ public struct UPIPayView: View {
                 HStack {
                     Text("Status").font(.caption).foregroundColor(.secondary)
                     Spacer()
-                    Text("COMPLETED").font(.caption).bold().foregroundColor(.green)
+                    Text("COMPLETED").font(.caption).bold().foregroundColor(.tgTeal)
                 }
                 .accessibilityIdentifier("tgBank.upi.successStatus")
             }
@@ -232,7 +232,7 @@ public struct UPIPayView: View {
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .frame(height: 48)
-                .background(Color.green)
+                .background(Color.tgTeal)
                 .cornerRadius(10)
                 .accessibilityIdentifier("tgBank.upi.successDoneButton")
 
@@ -241,10 +241,10 @@ public struct UPIPayView: View {
                     coordinator.selectedTab = .transactions
                 }
                 .font(.headline)
-                .foregroundColor(.blue)
+                .foregroundColor(.tgSapphire)
                 .frame(maxWidth: .infinity)
                 .frame(height: 48)
-                .background(Color.blue.opacity(0.12))
+                .background(Color.tgSapphire.opacity(0.12))
                 .cornerRadius(10)
                 .accessibilityIdentifier("tgBank.upi.successViewTransactionButton")
             }
@@ -308,7 +308,7 @@ struct TabButton: View {
                 .foregroundColor(active ? .white : .secondary)
                 .frame(maxWidth: .infinity)
                 .frame(height: 36)
-                .background(active ? Color.purple : Color.clear)
+                .background(active ? Color.tgPurple : Color.clear)
                 .cornerRadius(8)
         }
         .accessibilityIdentifier(id)
@@ -326,7 +326,7 @@ struct DemoMerchantButton: View {
         Button(action: action) {
             VStack(spacing: 2) {
                 Text(title).font(.caption2).bold().foregroundColor(.primary)
-                Text("$\(amt, specifier: "%.2f")").font(.caption2).foregroundColor(.purple)
+                Text("$\(amt, specifier: "%.2f")").font(.caption2).foregroundColor(.tgPurple)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)

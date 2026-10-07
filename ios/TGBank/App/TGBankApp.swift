@@ -10,6 +10,8 @@ struct TGBankApp: App {
             ContentView()
                 .environmentObject(repository)
                 .environmentObject(coordinator)
+                .tint(.tgSapphire)
+                .font(.system(.body, design: .rounded))
                 .preferredColorScheme(repository.colorScheme)
         }
     }
@@ -41,45 +43,45 @@ struct MainTabView: View {
             }
             .tabItem {
                 Label("Home", systemImage: "house.fill")
+                    .accessibilityIdentifier("tgBank.tab.home")
             }
             .tag(AppTab.home)
-            .accessibilityIdentifier("tgBank.tab.home")
 
             NavigationStack(path: $coordinator.paymentsPath) {
                 UPIPayView()
             }
             .tabItem {
                 Label("UPI & Pay", systemImage: "qrcode.viewfinder")
+                    .accessibilityIdentifier("tgBank.tab.payments")
             }
             .tag(AppTab.payments)
-            .accessibilityIdentifier("tgBank.tab.payments")
 
             NavigationStack(path: $coordinator.transactionsPath) {
                 TransactionsListView()
             }
             .tabItem {
                 Label("History", systemImage: "clock.arrow.circlepath")
+                    .accessibilityIdentifier("tgBank.tab.transactions")
             }
             .tag(AppTab.transactions)
-            .accessibilityIdentifier("tgBank.tab.transactions")
 
             NavigationStack(path: $coordinator.creditPath) {
                 CreditDashboardView()
             }
             .tabItem {
                 Label("Credit & Loan", systemImage: "creditcard.fill")
+                    .accessibilityIdentifier("tgBank.tab.credit")
             }
             .tag(AppTab.credit)
-            .accessibilityIdentifier("tgBank.tab.credit")
 
             NavigationStack(path: $coordinator.profilePath) {
                 ProfileView()
             }
             .tabItem {
                 Label("Profile", systemImage: "person.crop.circle.fill")
+                    .accessibilityIdentifier("tgBank.tab.profile")
             }
             .tag(AppTab.profile)
-            .accessibilityIdentifier("tgBank.tab.profile")
         }
         .accessibilityIdentifier("tgBank.tabBar")
     }

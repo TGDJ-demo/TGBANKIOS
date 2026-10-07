@@ -25,7 +25,7 @@ public struct AddMoneyView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .resizable()
                                 .frame(width: 64, height: 64)
-                                .foregroundColor(.teal)
+                                .foregroundColor(.tgTeal)
 
                             Text("Funds Added Successfully")
                                 .font(.title2)
@@ -43,7 +43,7 @@ public struct AddMoneyView: View {
                                     .foregroundColor(.white)
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 48)
-                                    .background(Color.teal)
+                                    .background(Color.tgTeal)
                                     .cornerRadius(10)
                                     .accessibilityIdentifier("tgBank.addMoney.doneButton")
 
@@ -52,10 +52,10 @@ public struct AddMoneyView: View {
                                     coordinator.selectedTab = .transactions
                                 }
                                 .font(.headline)
-                                .foregroundColor(.blue)
+                                .foregroundColor(.tgSapphire)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 48)
-                                .background(Color.blue.opacity(0.12))
+                                .background(Color.tgSapphire.opacity(0.12))
                                 .cornerRadius(10)
                                 .accessibilityIdentifier("tgBank.addMoney.viewTransactionButton")
                             }
@@ -117,7 +117,7 @@ public struct AddMoneyView: View {
                                     .foregroundColor(.white)
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 50)
-                                    .background(Color.teal)
+                                    .background(Color.tgTeal)
                                     .cornerRadius(10)
                             }
                             .accessibilityIdentifier("tgBank.addMoney.submitButton")

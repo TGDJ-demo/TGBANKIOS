@@ -25,7 +25,7 @@ public struct KYCWizardView: View {
                 HStack(spacing: 4) {
                     ForEach(1...6, id: \.self) { s in
                         Rectangle()
-                            .fill(step >= s ? Color.green : Color(uiColor: .systemGray4))
+                            .fill(step >= s ? Color.tgTeal : Color(uiColor: .systemGray4))
                             .frame(height: 4)
                     }
                 }
@@ -101,7 +101,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(Color.blue)
+            .background(Color.tgSapphire)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.step1.nextButton")
         }
@@ -148,10 +148,10 @@ public struct KYCWizardView: View {
 
             if isDocumentUploaded {
                 HStack {
-                    Image(systemName: "checkmark.seal.fill").foregroundColor(.green)
+                    Image(systemName: "checkmark.seal.fill").foregroundColor(.tgTeal)
                     Text("Document verified by automated OCR engine")
                         .font(.caption)
-                        .foregroundColor(.green)
+                        .foregroundColor(.tgTeal)
                 }
                 .accessibilityIdentifier("tgBank.kyc.documentUploaded")
             }
@@ -164,7 +164,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(isDocumentUploaded ? Color.blue : Color.gray)
+            .background(isDocumentUploaded ? Color.tgSapphire : Color.gray)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.step2.nextButton")
         }
@@ -197,7 +197,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(Color.blue)
+            .background(Color.tgSapphire)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.step3.nextButton")
         }
@@ -215,13 +215,13 @@ public struct KYCWizardView: View {
 
             ZStack {
                 Circle()
-                    .stroke(isSelfieCaptured ? Color.green : Color.blue, lineWidth: 4)
+                    .stroke(isSelfieCaptured ? Color.tgTeal : Color.tgSapphire, lineWidth: 4)
                     .frame(width: 140, height: 140)
 
                 if isSelfieCaptured {
                     Image(systemName: "checkmark")
                         .font(.system(size: 48, weight: .bold))
-                        .foregroundColor(.green)
+                        .foregroundColor(.tgTeal)
                 } else {
                     Image(systemName: "person.fill")
                         .font(.system(size: 64))
@@ -236,10 +236,10 @@ public struct KYCWizardView: View {
                     Text("Capture Native Selfie")
                 }
                 .font(.subheadline)
-                .foregroundColor(.blue)
+                .foregroundColor(.tgSapphire)
                 .frame(maxWidth: .infinity)
                 .frame(height: 44)
-                .background(Color.blue.opacity(0.12))
+                .background(Color.tgSapphire.opacity(0.12))
                 .cornerRadius(10)
             }
             .accessibilityIdentifier("tgBank.kyc.captureSelfieButton")
@@ -268,7 +268,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(isSelfieCaptured ? Color.blue : Color.gray)
+            .background(isSelfieCaptured ? Color.tgSapphire : Color.gray)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.step4.nextButton")
         }
@@ -303,7 +303,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(Color.green)
+            .background(Color.tgTeal)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.submitButton")
         }
@@ -320,7 +320,7 @@ public struct KYCWizardView: View {
             Image(systemName: "checkmark.seal.fill")
                 .resizable()
                 .frame(width: 72, height: 72)
-                .foregroundColor(.green)
+                .foregroundColor(.tgTeal)
 
             Text("KYC Completed Successfully")
                 .font(.title2)
@@ -341,7 +341,7 @@ public struct KYCWizardView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(Color.green)
+            .background(Color.tgTeal)
             .cornerRadius(10)
             .accessibilityIdentifier("tgBank.kyc.doneButton")
         }
@@ -373,7 +373,7 @@ public struct KYCWizardView: View {
                 // Face guide oval
                 ZStack {
                     Ellipse()
-                        .stroke(Color.green, lineWidth: 3)
+                        .stroke(Color.tgTeal, lineWidth: 3)
                         .frame(width: 220, height: 300)
                 }
                 .accessibilityIdentifier("tgBank.faceScanner.faceGuide")

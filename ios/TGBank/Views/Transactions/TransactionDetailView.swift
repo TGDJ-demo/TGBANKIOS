@@ -20,7 +20,7 @@ public struct TransactionDetailView: View {
                     VStack(spacing: 12) {
                         ZStack {
                             Circle()
-                                .fill(tx.isCredit ? Color.green.opacity(0.12) : Color.blue.opacity(0.12))
+                                .fill(tx.isCredit ? Color.tgTeal.opacity(0.12) : Color.tgSapphire.opacity(0.12))
                                 .frame(width: 64, height: 64)
                             Image(systemName: tx.isCredit ? "arrow.down.left" : "arrow.up.right")
                                 .font(.title2)
@@ -42,8 +42,8 @@ public struct TransactionDetailView: View {
                             .bold()
                             .padding(.horizontal, 10)
                             .padding(.vertical, 4)
-                            .background(Color.green.opacity(0.15))
-                            .foregroundColor(.green)
+                            .background(Color.tgTeal.opacity(0.15))
+                            .foregroundColor(.tgTeal)
                             .cornerRadius(8)
                             .accessibilityIdentifier("tgBank.transactionDetail.status")
                     }
@@ -71,10 +71,10 @@ public struct TransactionDetailView: View {
                             Text(receiptDownloaded ? "Receipt Downloaded (PDF)" : "Download PDF Receipt")
                         }
                         .font(.headline)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.tgSapphire)
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
-                        .background(Color.blue.opacity(0.12))
+                        .background(Color.tgSapphire.opacity(0.12))
                         .cornerRadius(10)
                     }
                     .padding(.horizontal)

@@ -73,8 +73,8 @@ public struct TestControlsView: View {
                     // Status Message
                     if let msg = statusMessage {
                         HStack {
-                            Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
-                            Text(msg).font(.caption).bold().foregroundColor(.green)
+                            Image(systemName: "checkmark.circle.fill").foregroundColor(.tgTeal)
+                            Text(msg).font(.caption).bold().foregroundColor(.tgTeal)
                         }
                         .padding(.horizontal)
                         .accessibilityIdentifier("tgBank.testControls.statusMessage")
@@ -106,7 +106,7 @@ public struct TestControlsView: View {
                             statusMessage = "KYC status reset to Incomplete."
                         }) {
                             HStack {
-                                Image(systemName: "person.crop.circle.badge.exclamationmark").foregroundColor(.orange)
+                                Image(systemName: "person.crop.circle.badge.exclamationmark").foregroundColor(.tgPink)
                                 Text("Reset KYC Status (Incomplete)")
                                     .font(.subheadline)
                                     .bold()
@@ -124,7 +124,7 @@ public struct TestControlsView: View {
                             statusMessage = "Credit limits & utilization reset."
                         }) {
                             HStack {
-                                Image(systemName: "creditcard.and.123").foregroundColor(.blue)
+                                Image(systemName: "creditcard.and.123").foregroundColor(.tgSapphire)
                                 Text("Reset Credit Utilization ($0 used)")
                                     .font(.subheadline)
                                     .bold()
@@ -141,7 +141,7 @@ public struct TestControlsView: View {
                             statusMessage = "Database seeded with default records."
                         }) {
                             HStack {
-                                Image(systemName: "externaldrive.fill.badge.checkmark").foregroundColor(.green)
+                                Image(systemName: "externaldrive.fill.badge.checkmark").foregroundColor(.tgTeal)
                                 Text("Seed Demo Database")
                                     .font(.subheadline)
                                     .bold()
