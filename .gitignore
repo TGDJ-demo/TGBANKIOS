@@ -3,3 +3,7 @@
 .env*
 /ios/build/
 /ios/certs/
+xcuserdata/
+xcuserdata/
+__pycache__/
+*.pyc
